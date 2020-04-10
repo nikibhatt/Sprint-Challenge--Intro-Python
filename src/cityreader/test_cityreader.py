@@ -73,9 +73,9 @@ class CityreaderTests(unittest.TestCase):
       City("Detroit", 42.3834,-83.1024),
       City("Providence", 41.8229,-71.4186),
       City("Louisville", 38.1662,-85.6488),
-      City("Portland", 45.5372,-122.65)
+      City("Portland", 45.5372,-122.65),
     ]
-    
+
   def test_cityreader_correctness(self):
     for i in range(len(self.cities)):
       self.assertTrue(check_city(self.cities[i], self.expected[i]))
